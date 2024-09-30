@@ -1,0 +1,93 @@
+/* CÓDIGOS DE COLORES PARA EL CSS 
+Azul oscuro #08404D
+Celeste/turquesa #4BC99B 
+Verde #88D876 
+Blanco #F0E8E3*/
+
+*{
+    margin:0;
+    padding:0;
+   
+}
+.header{
+    max-width: 100%;
+    background-color: #08404D;
+    font-family: "Montserrat";
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 79, 97, 0.25);
+
+    
+}
+.nav{
+    margin-top: 5px;
+   
+}
+.logo{
+    width: 30%;
+    margin: 20px;
+    margin-left: 30px;
+}
+
+.logo img{
+    width: 130px;
+}
+
+
+.menú{
+    width: 800px;
+    height: 50px;
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+        
+}
+
+.menú li a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #F0E8E3;
+    font-weight: 600;
+    border-radius: 30px;
+    
+}
+
+.menú > li > a:hover{
+    background-color:#F0E8E3;
+    color: #08404D;
+    font-weight: 600;
+    transition: 0.3s;
+    transform: translateY(-5px);
+    
+}
+
+
+.desplegable{
+    font-size: 15px;
+    position: absolute;
+    display: none;
+    width: 155px;
+    list-style: none;
+    background-color: rgba(0, 10, 30, .7);
+    border-radius: 30px;
+}
+
+.menú li:hover .desplegable{
+    display: block; /*para que se muestre el menú*/
+    transition: 0.5s;
+}
+
+.desplegable li a{
+    padding: 15px 15px 15px 20px;
+
+}
+
+.desplegable >li > a:hover{
+    background-color:#F0E8E3;
+    color: #08404D;
+    font-weight: 600;
+    transition: 0.3s;
+}

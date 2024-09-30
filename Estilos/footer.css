@@ -1,0 +1,30 @@
+
+
+.centrar{
+    background-color: #08404D;
+    width: 100%;
+    min-height: 40px;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+}
+
+
+.texto{
+    color: #F0E8E3;
+    font-family: "Montserrat";
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+   
+}
+
+.texto2{
+    color: #F0E8E3;
+    font-family: "Montserrat";
+    font-size: 10px;
+    text-align: center;
+   padding-bottom: 10px;
+   margin-bottom: 10px;
+}
