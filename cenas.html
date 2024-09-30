@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilos/nav.css">
+    <link rel="stylesheet" href="./Estilos/footer.css">
+    <link rel="stylesheet" href="./Estilos/cartas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Estilos/boton.css">
+   <!--link de la libreria para la ventana emergente-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="icon" href="./imágenes/logo pequeño b.png">
+
+    <title>Prueba</title>
+</head>
+<body>
+   
+   <header class="header">
+      <div class="logo">
+  <a href="index.html"><img src="imágenes/imágenesCenas/logo1.png" alt="Logo" width="200px"></a>
+      </div>
+      <nav class="nav">
+  <ul class="menú">
+          <li><a href="index.html">INICIO</a></li>
+          <li>
+              <a href="#">RECETARIO</a>
+              <ul class="desplegable"> <!--Menú desplegable para no ocupar tanto espacio, se va ver mejor con css jiji-->
+                  <li><a href="desayunos.html">Desayunos</a></li>
+                  <li><a href="cenas.html">Cenas</a></li>
+                  <li><a href="ensaladas.html">Ensaladas</a></li>
+                  <li><a href="bebidas.html">Bebidas</a></li>
+                  <li><a href="postres.html">Postres</a></li>
+                  <li><a href="snacks.html">Snacks</a></li>
+              </ul>
+          </li>
+          <li><a href="consejos.html">CONSEJOS</a></li>
+          <li><a href="./Restaurantes-final/restaurantes1.html">RESTAURANTES</a></li>
+  </ul>      
+      </nav>
+  </header>
+
+    <div class="Título">
+        <H1>CENAS</H1>
+        <H2>Disfruta de cenas saludables y deliciosas, llenas de ingredientes frescos y equilibrados, perfectas para nutrir tu cuerpo mientras cuidas de tu bienestar</H2>
+    </div>
+  
+<div class="container"> <!--inicio primer contenedor general-->
+
+   <div class="carta">
+      <img src="imágenes/imágenesCenas/revuelto-de-espinacas.jpg" alt="fresa">
+      <H2>Huevos revueltos con espinacas</H2>
+             <p> Rápidos y fáciles de preparar, estos crujientes garbanzos están llenos de sabor
+             y nutrientes.</p>
+          
+             <a href="#ex1" rel="modal:open"><button>¡Preparar!</button></a>
+             
+     </div>
+
+     <!-- ventana emergente-->
+
+     <div id="ex1" class="modal receta">
+
+      <H2>HUEVOS REVUELTOS CON ESPINACA</H2>
+ 
+         <div>
+          <h3>Ingredientes</h3>
+         </div> 
+         <ul>
+           <li>Cebolla - al gusto.</li>
+           <li>Huevos - 1.</li>
+           <li>Espinaca - 60 gramos.</li>
+           <li> Sal - 1 pizca. </li>
+           <li> Aceite de oliva - 1 cdita.</li>
+         </ul>
+  
+          <h3>Procedimiento</h3>
+       
+         <ul>
+           <li> Lavar las espinacas y cortarlas en tiras.</li>
+           <li> En una sartén, caliente un poco el aceite y sofríe la cebolla hasta que comiencen a dorarse, En una sartén, caliente un poco el aceite y sofríe la cebolla hasta que comiencen a dorarse, entonces añadir las espinacas y mantenerlas a fuego medio durante 5-6 minutos</li>
+           <li>Agregar los huevos batidos y la pizca de sal, cocinar a fuego bajo hasta que el huevo esté en <br> el punto de cocción adecuado. </li>
+         </ul>
+
+         <h3> OPCIONAL </h3> 
+         <p> Acompañar con una taza de frijoles cocidos/ molidos y 1 rebanada de pan integral. <br>
+            2 tostadas integrales.
+         </p>
+     </div>
+
+        <div class="carta">
+        <img src="imágenes/imágenesCenas/tortilla-zanahoria.png" alt="gelatinas">
+         <H2>Tortilla de zanahoria con jamón y pavo</H2>
+                 <p>Disfruta de unos deliciosos y saludables cups keto de avellanas y chocolate.llenos de sabor
+                    y nutrientes</p>
+              
+                    <a href="#ex2" rel="modal:open"><button>¡Preparar!</button></a>
+        </div>
+   
+        <!-- ventana emergente-->
+
+        <div id="ex2" class="modal receta">
+   
+          <H2>TORTILLA DE ZANAHORIA CON JAMÓN DE PAVO Y QUESO MOZZARELLA</H2>
+        
+            <div>
+             <h3>Ingredientes</h3>
+            </div> 
+            <ul>
+             <li> Zanahoria - ½ (dependiendo del tamaño de la zanahoria).</li>
+             <li>Jamón de pavo - 1 loncha (lasca).</li>
+             <li>Queso mozzarella - al gusto (opcional)</li>
+             <li>Huevos - 1. </li>
+             <li> Harina de avena - ½ cucharada.</li>
+             <li> Sal - 1 pizca.</li>
+             <li> Sal - 1 pizca.</li>
+            </ul>
+    
+            <div class="Datos">
+             <h3>Procedimiento</h3>
+            </div>   
+            <ul>
+             <li>Pelar y rallar la zanahoria.</li>
+             <li>Pelar y rallar la zanahoria.</li>
+             <li>Añadir la zanahoria rallada y la harina de avena al huevo batido, la pizca de sal y mezclar todo.</li>
+             <li>Echar el aceite en una sartén. Cuando esté caliente, echar la mezcla y cocinar a fuego medio. Cuando la tortilla comience a cocinarse, extender las lascas de jamón de pavo y el queso.Con cuidado, doblar la tortilla por la mitad.</li>
+             <li>Cocinar a fuego medio-bajo durante un ratito y darle la vuelta. También, puedes ayudarte de un plato para darle la vuelta.</li>      
+            </ul>
+
+            <h3> OPCIONAL </h3>
+             <p>Acompañar con una taza de frijoles cocidos</p> 
+         </div>
+    
+      <!-- termina ventana emergente-->
+
+   
+
+        <div class="carta">
+         <img src="imágenes/imágenesCenas/pan-pita-aguacate.png" alt="panna">
+         <H2>PanPita rellena de aguacate y pollo</H2>
+                 <p>Estos snacks crujientes y coloridos son fáciles y rápidos de preparar, proporcionando un tentempié
+                    nutritivo y lleno de sabor.</p>
+                    <a href="#ex3" rel="modal:open"><button>¡Preparar!</button></a>
+        </div>
+     
+        <!-- ventana emergente-->
+
+        <div id="ex3" class="modal receta">
+   
+          <H2>PAN PITA RELLENA DE AGUACATE Y POLLO</H2>
+    
+            <div>
+             <h3>Ingredientes</h3>
+             </div> 
+            <ul>
+             <li> Aguacates - ½.</li>
+             <li>Pechugas de pollo - ½.</li>
+             <li>Pan pita - 1 unidad.</li>
+             <li> Aceite de oliva - ½ cdita.</li>
+             <li> Sal - 1 pizca.</li>
+            </ul>
+
+            <div class="Datos">
+             <h3>Procedimiento</h3>
+            </div>   
+            <ul>
+              <li>Echar el aceite de oliva en un sartén, que caliente sofríe la pechuga con sal por ambos lados, hasta cocinarla por dentro. </li>
+              <li>Desmenuzar la pechuga, puede apoyarse de dos tenedores.</li>
+              <li>En un plato hondo o un bowl, sacar los aguacates y añadirles un poco de sal. Con ayuda de un tenedor o un aplasta</li>
+              <li>Mezcla el aguacate con el pollo picado. </li>
+              <li>Tostar los panes y rellénalos con la mezcla de aguacate y pollo.</li>
+            </ul>
+        </div>
+
+        
+
+</div> <!--final primero contenedor-->
+
+<br>
+
+<div class="container"> <!--inicio segundo contenedor-->
+      
+   <div class="carta">
+      <img src="imágenes/imágenesCenas/torta-de-coliflor.png" alt="panna">
+      <H2>Tortilla de colifror y queso</H2>
+              <p>Estos snacks crujientes y coloridos son fáciles y rápidos de preparar, proporcionando un tentempié
+                 nutritivo y lleno de sabor.</p>
+                 <a href="#ex4" rel="modal:open"><button>¡Preparar!</button></a>
+     </div>
+  
+     <!-- ventana emergente-->
+
+      <div id="ex4" class="modal receta">
+
+       <H2>TORTILLA DE COLIFLOR Y QUESO</H2>
+ 
+         <div>
+          <h3>Ingredientes</h3>
+          </div> 
+         <ul>
+           <li>Coliflor - 100 gramos.</li>
+           <li> Huevos - 1 ½ o 2, dependiendo del tamaño del huevo.</li>
+           <li>Queso rallado (mozzarella) - ¼ taza.</li>
+           <li>Sal - 1 pizca.</li>
+           <li>Aceite de oliva - ½ cucharadita.</li>
+           <li>Pan integral - 1 rebanada.</li>
+           <li>Cilantro picado (opcional).</li>
+           <li>Especies al gusto (opcional).</li>
+         </ul>
+
+       
+           <h3>Procedimiento</h3>
+          
+         <ul>
+            <li> Rallar la coliflor cruda (bastante fina)</li>
+            <li>En un recipiente hondo batir los huevos. Luego, añadir la coliflor picada, un poco de sal y mezclar. </li>
+            <li>Echar el aceite en una sartén, cuando esté caliente, verter la mitad de la mezcla y extenderla por toda la sartén.</li>
+            <li>Cocinar durante varios minutos a fuego medio.</li>
+            <li>Cuando estén un poco cocinados, echar la mitad del queso rallado y con cuidado cierra por la mitad la tortilla. Luego un minuto o hasta que se vea cocida de un lado, dar la vuelta a la tortilla para que se dore por el otro lado</li>
+            <li>Tostar el pan.</li>
+         </ul>
+
+         <h3> OPCIONAL </h3> 
+         <p> 1. Acompañar con una taza de frijoles cocidos </p>
+     </div>
+      
+
+       <div class="carta">
+            <img src="imágenes/imágenesCenas/papa-horneada.jpg" alt="brownies">
+            <H2>Papas rellenas de jamón y queso </H2>
+                    <p>Estos snacks crujientes y coloridos son fáciles y rápidos de preparar, proporcionando un tentempié
+                       nutritivo y lleno de sabor.</p>
+                       <a href="#ex5" rel="modal:open"><button>¡Preparar!</button></a>
+           </div>
+        
+           <!-- ventana emergente-->
+   
+            <div id="ex5" class="modal receta">
+      
+             <H2>PAPAS RELLENAS CON JAMÓN Y QUESO </H2>
+       
+                <div>
+                 <h3>Ingredientes</h3>
+                </div> 
+               <ul>
+                  <li>Queso rallado - 2 cucharada grande.</li>
+                  <li>Papas - 1 o 2 (dependiendo del tamaño). </li>
+                  <li>Queso parmesano - 1 cucharada (opcional). </li>
+                  <li>Jamón de pavo - 2 lonjas.</li>
+                  <li>Sal - 1 pizca.</li>
+                  <li>Pimienta - ½ pizca.</li>
+               </ul>
+   
+                 <h3>Procedimiento</h3>
+               
+               <ul>
+                  <li>Lavar las papas, córtalas por la mitad y ponerlas a cocer en agua hirviendo. Cuando estén blandas, dejarlas enfriar un poco.Con una cuchara saca parte de su carne.</li>
+                  <li>En un recipiente aplastar con un tenedor lo que sacaste de la papa y echarle un poco de sal y pimienta.</li>
+                  <li>Cortar el jamón en trozos y añadirlo al recipiente con la papa. (Añadir también el queso parmesano rallado).</li>
+                  <li>Rellenar las papas con la mezcla de queso, jamón y papa. Esparcir el queso rallado por encima y meterlas en el horno a 200°C durante 5 minutos.  Hasta que el queso se derrita. </li>
+               </ul>
+           </div>
+       
+
+        <div class="carta">
+            <img src="imágenes/imágenesCenas/Pasta-espinaca2.jpg" alt="Pasta en salasa de espinaca">
+            <H2>Pasta en salsa de espinaca</H2>
+                    <p>Estos snacks crujientes y coloridos son fáciles y rápidos de preparar, proporcionando un tentempié
+                       nutritivo y lleno de sabor.</p>
+                       <a href="#ex6" rel="modal:open"><button>¡Preparar!</button></a>
+         </div>
+        
+           <!-- ventana emergente-->
+   
+            <div id="ex6" class="modal receta">
+      
+             <H2>PASTA EN SALSA DE ESPINACA, AGUACATE Y QUESO PARMESANO</H2>
+       
+               <div>
+                <h3>Ingredientes</h3>
+                </div> 
+               <ul>
+                  <li>Espinaca - 60 gramos.</li>
+                  <li> Ajo - 1 diente. </li>
+                  <li>Cebolla - ¼ taza.</li>
+                  <li>Queso parmesano - ¼ taza.</li>
+                  <li>Macarrón - 90 gramos.</li>
+                  <li>Aguacate - ½.</li>
+                  <li>Aceite de oliva - 1 cda.</li>
+                  <li>Sal - 1 pizca.</li>
+               </ul>
+   
+                 <h3>Procedimiento</h3>
+              
+               <ul>
+                  <li>Lavar la espinaca, cortar la cebolla y el ajo.</li>
+                  <li>Cocinar la pasta en agua hirviendo el tiempo que indica sus instrucciones. Reservar una taza y media del agua de cocción.</li>
+                  <li>Mientras está en cocción la pasta, en una sartén con el aceite de oliva, sofreír a fuego medio-bajo la cebolla y el ajo picado. Después de un rato, añadir las espinacas y saltear a fuego medio y con un poco de sal.</li>
+                  <li>En el vaso de tu batidora las espinacas salteadas, el aguacate, el queso parmesano rallado y una taza del agua que has reservado de la cocción. Tritura durante varios minutos, hasta que la salsa quede homogénea. Comprueba si necesita un poco más de sal o está bien y corrige en su caso. Si sientes que está muy densa, añade un poquito más del agua que tenías reservada.</li>
+                  
+               </ul>
+           </div>  <!-- termina ventana emergente-->
+         
+   </div><!--final segundo contenedor-->
+
+<br>
+
+<div class="botonArriba">
+
+   <button id="scrollTopBtn" onclick="scrollToTop()">
+      <img class="fas fa-arrow-up" src="/imágenes/flecha-hacia-arriba.png" alt="flecha"><!-- Añadir un ícono -->
+</div>   
+
+    <!--llamado para ventana emergente de la libreria-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <!--llamado para ventana emergente de la libreria-->
+
+    <script src="/botonarriba.js"></script>
+</body>
+
+<footer>
+   <div class="centrar">
+       <p class="texto">¡Come rico, Come saludable!</p>
+       <p class="texto2">Nutrilife 2024 - Todos los Derechos Reservados</p>
+   
+   </div>
+</footer>
+
+</html>
