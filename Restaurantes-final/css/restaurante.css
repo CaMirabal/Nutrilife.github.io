@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box; /* estilo caja a todos los elementos, el padding y el border en el ancho y alto */
+
+}
+
+body {
+    overflow-x: hidden; /* para que la página no se desborde horizontalmente */
+    text-decoration: none;
+}
+
+main{ /* Centra el contenedor en su elemento padre */
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contenedor {
+	width: 100%;
+	margin: auto;
+}
+
+/*HEADER*/
+
+header {
+	width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/imagenes-restaurantes/fondo-info.jpg); /*PARA controlar la mg que baja*/
+    background-size: cover;  /* Ajusta la imagen de fondo para cubrir todo*/
+    background-attachment: fixed; /* para la imagen fija al scrollear */
+	background-position: center 0; /* Centra la imagen de fondo */
+}
+
+header .contenedor {
+	position: relative;
+	height: 700px;
+}
+
+header .textos {
+    font-family: "Montserrat", sans-serif;
+	width: 100%;
+	color: #fff;
+	position: absolute;
+	top: 50%; /* texto verticalmente al centro */
+	margin-top: -52px; /* Ajusta la posición vertical para centrar el texto correctamente */
+}
+
+.consejos{
+    text-align: justify;
+    background:  #F0E8E3;
+}
+
+/* Configuración del contenedor para evitar desbordamiento */
+.container {
+    max-width: 100%;
+    padding: 0 15px; /* para que los contenedores no se desborden, padding horizontal */
+    box-sizing: border-box;
+}
+
+/* CONTAINER QUE CONTROLA TAMAÑOS DE LOS CONSEJOS*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container h2{
+    color: #0a303c;
+    font-family: "Montserrat", cursive;
+    font-size:25px;
+}
+
+.container h3{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;;
+}
+
+.ubicacion{
+    font-family: "Zain", sans-serif;
+    font-size: 16px;
+    color: rgb(44, 43, 43);
+}
+
+#restaurantes #restaurantes-internacioales #postres {
+    display: flex; /* flexbox alinea los elementos */
+    padding: 20px;
+    flex-wrap: wrap; /* por si los elementos si no caben en una sola línea */
+    margin: 0 auto; /* Ajusta el margen, centra el contenedor horizontalmente */
+    box-sizing: border-box;
+}
+
+.restaurante .internacional .postre h2 {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #0a303c;
+}
+
+.restaurante-info {
+    display: flex;
+    flex-wrap: wrap; /* Para que los elementos se adapten en pantallas pequeñas */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.restaurante-info img {
+    max-width: 100%;
+    height: auto;  /* Mantiene la proporción de la imagen */
+    border-radius: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+
+
+.redes a{
+    text-decoration: none;
+    font-size: large;
+}
+
+.detalles {
+    flex: 1 1 100%; /* Para que tome todo el ancho en pantallas pequeñas */
+}
+
+/* fuentes: "Comfortaa", sans-serif;  "Montserrat", sans-serif; */
+.detalles h3 {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 900;
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #5b4241;
+}
+
+.detalles p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    margin: 0;
+    color: #302f2f;
+}
+
+
+/* ------ RESPONSIVE ------*/
+
+@media (max-width: 768px) {
+    header .contenedor {
+        height: 500px; /* Ajustar la altura del header en pantallas pequeñas */
+    }
+    aside {
+        margin: 10px 0; /* margen del aside */
+    }
+}
+.consejos {
+    padding: 20px 0; /* Padding vertical */
+}
+
+
+.consejos .col-md-4 {
+    margin-bottom: 20px; /* Espaciado externo inferior */
+}
+
+@media (max-width: 768px) {
+    .consejos .row {
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+    
+    .consejos .col-md-4 {
+        margin-bottom: 30px; /* Aumenta espaciado externo inferior en pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .consejos .col-md-4 {
+        flex: 0 0 100%; /* que las columnas ocupen todo el ancho */
+        max-width: 100%; /* Ajusta el ancho máximo de las columnas */
+    }
+}
